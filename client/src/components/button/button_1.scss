@@ -1,0 +1,11 @@
+@import '../../assets/scss/main.scss';
+
+.button_2{
+  button{
+    background-color: $blue;
+    padding: 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+  }
+}

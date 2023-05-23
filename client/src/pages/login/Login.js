@@ -1,8 +1,10 @@
 import './login.scss';
 import { useState } from "react";
 import axios from 'axios';
+import Button1 from '../../components/button/Default_Button';
 
 const Login = () => {
+
     const [name, setName] = useState('');
     const [firstname, setFirstname] = useState('');
     const [password, setPassword] = useState('');
@@ -79,7 +81,7 @@ const Login = () => {
                         <input type="password" placeholder="password" onChange={handlePassword} />
                     </div>
                     <div className="btn-container">
-                        <button onClick={handleSubmit} className='btn'>Login</button>
+                        <Button1 type="submit" onClick={handleSubmit} text="Connexion" ></Button1>
                     </div>
                 </form>
             </div>
