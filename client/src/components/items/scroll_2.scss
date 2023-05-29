@@ -1,0 +1,41 @@
+@import '../../assets/scss/colors';
+@import '../../assets/responsive/responsive';
+
+.scroll{
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 250px 0;
+  .arrow-content{
+    justify-content: center;
+    width: 40px;
+    height: 85px;
+    display: flex;
+    border: $white 2px solid;
+    border-radius: 30px;
+    padding: 5px;
+    .arrow{
+      width: 0;
+      height: 0;
+      border-radius: 30%;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid $white; // Change this to the color you want for your arrow
+      animation: bounce 2s infinite;
+    }
+  }
+}
+
+//keyframes
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+}

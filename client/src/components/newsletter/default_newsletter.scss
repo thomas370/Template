@@ -1,0 +1,45 @@
+@import '../../assets/scss/colors';
+
+form{
+  background-image: url("../../assets/images/background_2.jpeg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  padding: 1rem;
+
+  h1 {
+    font-size: 2rem;
+    border: none;
+  }
+  p{
+    font-size: 1rem;
+  }
+    input {
+      width: 50%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid $grey;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: $black;
+
+      &::placeholder {
+        color: $grey;
+      }
+    }
+    button {
+      width: 50%;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border: 1px solid $grey;
+      border-radius: 5px;
+      font-size: 1rem;
+      color: $black;
+      background-color: $white;
+      cursor: pointer;
+    }
+}
